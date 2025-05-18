@@ -65,7 +65,7 @@ img{
     text-align: center;
     padding: 60px 0 100px;
     text-transform: uppercase;
-    font-size: var(--font-size-xl);
+    font-size: var(--font-size-l);
 }
 .section-title-mod{
     padding: 0;
@@ -147,14 +147,19 @@ header .navbar{
     display: flex;
     align-items: center;
     min-height: 100vh;
+    /* padding: 50px; */
     color: var(--white-color);
     justify-content: space-between;
 
 }
+.hero-section .hero-details{
+    margin-left: 150px;
+    align-items: center;
+}
 .hero-section .hero-details .title{
     font-size: var(--font-size-xxl);
     color: var(--secondary-color);
-    font-family: "miniver",sans-serif;          
+    font-family:sans-serif;          
 }
 .hero-section .hero-details .section{
     font-size: var(--font-size-xxl);
@@ -198,17 +203,20 @@ header .navbar{
     background: var(--secondary-color);
 }
 .hero-section .hero-image-wrapper{
-    max-width: 500px;
-    margin-right: 30px;
+    border: 2px solid white;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 100px;
+    box-shadow: 0px 0px 20px white;
+    object-fit: cover;
+    width: 500px;
 }
-
 
 /* about section  */
 
 .about-section{
     padding: 120px 0;
     background: var(--light-pink-color);
-
 }
 .about-section .section-content{
     display: flex;
@@ -249,8 +257,6 @@ header .navbar{
     text-align: center;
     font-size: var(--font-size-m);
 } 
-
-
 /* menu section  */
 
 .menu-section{
@@ -287,7 +293,6 @@ header .navbar{
     font-size: var(--font-size-l);
     font-weight: var(--font-weight-semibold)
 }
-
 
 /* testimonials section  */
 
@@ -336,8 +341,6 @@ header .navbar{
 .testimonials-section .swiper-slide-button:hover {
     color: var(--primary-color);
 }
-
-
 
 /* gallery section  */
 
@@ -529,12 +532,16 @@ header .navbar{
      .about-section .about-details,.contact-section .contact-form{
         max-width: 100%;
     }
+    .hero-section .hero-details {
+        margin-right: 90px;
+    }
     .hero-section .hero-details .buttons{
         justify-content: center;
     }
     .hero-section .hero-image-wrapper{
-        max-width: 270px;
-        margin-left: 0;
+        width: 300px;
+        margin-left: 150px;
+        overflow: hidden;        
     }
     .about-section .section-content {
         gap: 70px;
